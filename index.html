@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="reset.css" type="text/css">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:regular,italic,700,700italic" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="top">
         <nav id="navbar">
             <header>
                 <h1>JS Documentation</h1>
@@ -68,6 +70,7 @@
                         main page about JavaScript.</li>
                 </ul>
             </section>
+            <div class="sticky-to-the-top"><a href="#navbar"><i class="fas fa-arrow-up"></i></a></div>
             <section class="main-section" id="JavaScript_and_Java">
                 <header>JavaScript and Java</header>
                 <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The
@@ -97,7 +100,7 @@
                 <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world"
                     JavaScript
                     code:</p>
-                <code>function greetMe(yourName) { alert("Hello " + yourName); }
+                <code>function greetMe(yourName) { alert("Hello " + yourName); }<br>
                 greetMe("World");</code>
                 <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
             </section>
@@ -185,7 +188,7 @@
                 <header>Data types</header>
                 <p>The latest ECMAScript standard defines seven data types:</p>
                 <ul>
-                    <li>
+                    <li>Six data types that are primitives:
                         <ul>
                             <li>Boolean. true and false.</li>
                             <li>null. A special keyword denoting a null value. Because JavaScript is case-sensitive,
