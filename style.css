@@ -38,6 +38,16 @@ body .wrapper #navbar header {
   padding: 20px 0;
   border-bottom: 1px solid #000;
 }
+@media all and (max-width: 768px) {
+  body .wrapper #navbar header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 50px;
+    background: #fff;
+  }
+}
 body .wrapper #navbar header h1 {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 400;
@@ -128,6 +138,7 @@ body .wrapper #main-doc .main-section code {
 @media all and (max-width: 550px) {
   body .wrapper #main-doc .main-section code {
     margin: 0 auto;
+    font-size: 10px;
   }
 }
 body .wrapper #main-doc .main-section p {

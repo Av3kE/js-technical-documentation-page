@@ -60,10 +60,10 @@ body {
                 position: absolute;
                 border: none;
             }
+
             @media only screen and (max-width:350px) {
                 width: auto;
-                margin:0 auto;
-             
+                margin: 0 auto;
             }
 
             header {
@@ -71,6 +71,14 @@ body {
                 width: 100%;
                 padding: 20px 0;
                 border-bottom: 1px solid $main-color;
+
+                @media all and (max-width:768px) {
+                    position: sticky;
+                    top: 0;
+                    left: 0;
+                    height: 50px;
+                    background: #fff;
+                }
 
                 h1 {
                     @include open-sans29;
@@ -147,6 +155,7 @@ body {
 
                     @media all and (max-width:550px) {
                         margin: 0 auto;
+                        font-size: 10px;
                     }
                 }
 
